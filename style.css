@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: bisque; */
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f3f4;
+    margin: 0 10px;
+    padding: 5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.navbarContainer h1{
+    background-color:#f2f3f4;
+}
+
+.navbarContainer img{
+    width: fit-content ;
+    height: 25px;
+}
+
+.timeBtnContainer button{
+    border: 2px solid;
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #22ff16;
+}
+ 
+.inputContainer{
+    display: none;
+    /* display: flex; */
+    justify-content: space-around;
+    background-color: #aed6f1 ;
+    padding: 10px;
+    margin: 0 30px;
+    border-radius: 5px;
+}
+
+.inputContainer input{
+    border: 1px solid;
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+    background-color: #fdfefe;
+}
+
+.timerContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #aed6f1;
+}
+
+.timerContainer h1{
+    background-color: #aed6f1;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 30px;
+}
+
+.btnContainer button{
+    border: 2px solid black;
+    height: 35px;
+    width: 7%;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 500;
+}
+
+
