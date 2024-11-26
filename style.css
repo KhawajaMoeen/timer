@@ -2,97 +2,103 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-color: bisque; */
+    font-family: Roboto;
+    font-weight: 500;
 }
 
 .mainContainer{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    max-width: 40%;
+    min-height: 300px;
+    margin: 50px auto;
+    background-color: #375E97;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+    border-radius: 10px;
 }
 
 .bodyContainer{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-
-.navbarContainer{
-    display: flex;
-    justify-content: space-around;
-    background-color: #f2f3f4;
-    margin: 0 10px;
-    padding: 5px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-.navbarContainer h1{
-    background-color:#f2f3f4;
-}
-
-.navbarContainer img{
-    width: fit-content ;
-    height: 25px;
-}
-
-.timeBtnContainer button{
-    border: 2px solid;
-    height: 35px;
+    align-items: center;
     width: 100%;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #22ff16;
+    gap: 30px;
+    margin: 25px auto;
+    /* border: 1px solid; */
+}
+
+.setTimeContainer{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.setTimeContainer button{
+    width: 70%;
+    min-height: 35px;
+    border: none;
+    border-radius: 6px;
+    background-color: #FFBB00;
+    color: #000;
+    font-size: large;
 }
  
 .inputContainer{
     display: none;
     /* display: flex; */
-    justify-content: space-around;
-    background-color: #aed6f1 ;
-    padding: 10px;
-    margin: 0 30px;
-    border-radius: 5px;
+    gap: 12px;
+    max-width: 100%;
+    min-height: 30px;
+  
 }
 
 .inputContainer input{
-    border: 1px solid;
-    border-radius: 5px;
-    height: 25px;
-    text-align: center;
-    background-color: #fdfefe;
+   background-color: #FFBB00;
+   text-align: center;
+   border: 1px solid white;
+   border-radius: 5px;
 }
 
 .timerContainer{
     display: flex;
     justify-content: space-around;
-    margin: 0 30px;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #aed6f1;
+    width: 110%;
+    background-color: #F1F1F2;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 12px;
+    padding: 10px;
 }
 
-.timerContainer h1{
-    background-color: #aed6f1;
+.timerContainer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btnContainer{
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 0 30px;
+    justify-content: space-around;
+    /* border: 1px solid; */
+    width: 100%;
 }
 
 .btnContainer button{
-    border: 2px solid black;
-    height: 35px;
-    width: 7%;
-    padding: 4px;
-    border-radius: 5px;
-    background-color: #3498db;
-    color: #fff;
-    font-weight: 500;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F2;
+    color: #000;
+    width: 25%;
+    min-height: 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: large;    
 }
 
+.btnContainer .start-btn{
+    background-color:  #FFBB00;
+}
 

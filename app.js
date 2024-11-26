@@ -10,6 +10,10 @@ let secInp = document.getElementById("secInp")
 let inp = document.getElementById("inp")
 let btn = document.getElementById("btn")
 
+let stopBtn = document.getElementById("stopBtn")
+let startBtn = document.getElementById("startBtn")
+let resetBtn = document.getElementById("resetBtn")
+
 let hr;
 let min;
 let sec;
@@ -31,6 +35,10 @@ function userInput() {
     hr = hrInp.value
     min = minInp.value
     sec = secInp.value
+
+    startBtn.style.display = "flex"
+    stopBtn.style.display = "flex"
+    resetBtn.style.display = "flex"
     return
 }
 
@@ -40,8 +48,13 @@ function startTimer() {
     hrInp.value = ""
     minInp.value = ""
     secInp.value = ""
-    btn.style.display = "block"
+
+    btn.style.display = "flex"
+    btn.style.justifyContent = "center"
+    btn.style.alignItems = "center"  
     inp.style.display = "none"
+
+    startBtn.style.display = "none"
 }
 
 function timer() {
@@ -71,6 +84,8 @@ function timer() {
 
 function stopTimer(){
     clearInterval(timeInterval)
+
+    startBtn.style.display = "flex"
 }
 
 function resetTimer() {
@@ -79,11 +94,11 @@ function resetTimer() {
     min = 0
     sec = 0
     mSec = 0
-
+    
     hrTime.innerHTML = "00"
     minTime.innerHTML = "00"
     secTime.innerHTML = "00"
     mSecTime.innerHTML = "00"
+
+    startBtn.style.display = "flex"
 }
-
-

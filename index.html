@@ -9,14 +9,13 @@
 </head>
 <body>
     <div class="mainContainer">
-        <div class="navbarContainer">
-            <!-- <img src="./image/timerImg.jpg" alt="" > -->
-            <h1>Timer</h1>
-            <div class="timeBtnContainer">
-                <button onclick="setTimeBtn()" id="btn">Set Time</button>
+        <div class="bodyContainer">
+            <div class="heading">
+                <h1>Timer</h1>
             </div>
-        </div>
-        <div class="bodyContainer">            
+            <div class="setTimeContainer" id="btn">
+                <button onclick="setTimeBtn()">Set Time</button>
+            </div>
             <div class="inputContainer" id="inp">
                 <input type="text" name="" id="hrInp" placeholder="enter time for hours" onfocus="userInput()">
                 <input type="text" name="" id="minInp" placeholder="enter time for mins" onfocus="userInput()">
@@ -41,9 +40,9 @@
                 </div>
             </div>
             <div class="btnContainer">
-                <button onclick="startTimer()">Start</button>
-                <button onclick="stopTimer()">Stop</button>
-                <button onclick="resetTimer()">Reset</button>
+                <button onclick="stopTimer()" id="stopBtn">Stop</button>
+                <button onclick="startTimer()" class="start-btn" id="startBtn">Start</button>
+                <button onclick="resetTimer()" id="resetBtn">Reset</button>
             </div>
         </div>
     </div>
